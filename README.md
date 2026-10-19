@@ -6,9 +6,26 @@ Koder Open CLI is a configurable AI role platform from [KarmenLoop](https://karm
 
 Start with ready-to-edit defaults. Shape every business setting. Bring the role to the websites, collaboration tools, and messaging channels where work happens.
 
-**Status:** active development · local configuration preview available · live integrations in progress.
+**Status:** 0.1.0-preview.1 · installable macOS Apple Silicon configuration preview · live integrations in progress.
 
-**Repository scope:** public English product information and sanitized preview images only. Product source code, executable skills, private host components, runtime data, installers, and binaries are not included.
+**Repository scope:** English product documentation, sanitized preview images, and the download installer. Proprietary executable packages are distributed as Release assets. Product source code, private host components, and user data are not published in this Git tree.
+
+## Download the independent preview
+
+**[Download Koder Open CLI 0.1.0-preview.1 for macOS Apple Silicon](https://github.com/KarmenLoop/koder-open-cli/releases/download/v0.1.0-preview.1/koder-open-0.1.0-preview.1-darwin-arm64.tar.gz)** · [Release notes and checksums](https://github.com/KarmenLoop/koder-open-cli/releases/tag/v0.1.0-preview.1)
+
+This package includes the runtime and requires no separate Node.js installation. It uses the independent `koder-open` command and version series.
+
+Install from Terminal:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/KarmenLoop/koder-open-cli/main/install/koder-open.sh | sh
+"$HOME/.local/bin/koder-open" studio
+```
+
+Open the local URL printed by Studio. Or extract the downloaded archive and run `sh install.sh` inside it. See [installation, upgrade, rollback, and uninstall instructions](docs/INSTALLATION.md).
+
+**Platform:** macOS 11+ on Apple Silicon. **Distribution:** proprietary preview, ad-hoc signed, not Apple notarized. Additional platforms are still pending. This preview provides local role configuration and synthetic checks; models, live business channels, and active behavior analysis are not connected.
 
 ![Koder Open Role Studio — English local development preview](media/role-studio.jpg)
 
@@ -59,16 +76,16 @@ The connector roadmap also covers eleven categories: knowledge/documents, CRM, s
 
 | Available locally | Still in development |
 | --- | --- |
-| English Role Studio and CLI configuration entry | Integrated live role task execution |
+| English Role Studio, CLI, and macOS Apple Silicon installer | Integrated live role task execution |
 | Role creation and editable defaults | Complete natural-language setup wizard |
 | Twenty domain configuration seeds | Professional industry packs and reviews |
 | Eighteen-channel capability catalog | Connected and verified business channels |
 | Full configuration editing and field sources | Business connectors and website widget |
 | Save/reopen, conflict checks, reset, and rollback | Cross-device shared memory integration |
 | Synthetic role-readiness checks | Running behavior analysis and controlled adaptation |
-| Bundled, disabled behavior skill | Installers, server deployment, and independent product QA |
+| Bundled, disabled behavior skill | Additional platforms, server deployment, and independent product QA |
 
-The local candidate passed 44 automated tests after the English update. Browser checks verified English editing, saving, reopening, and responsive layout separately. These checks do not establish live channel or production readiness.
+The preview passed 47 source tests and 13 installer/runtime/distribution acceptance checks. These cover native binary startup, HTTP save/reopen, download checksums, installation, repeated installation, upgrade, rollback, collision protection, tamper rejection, and uninstall with user data retained. Browser save/reopen was also verified against the installed executable. These checks do not establish live channel or production readiness.
 
 ## Additional preview views
 
@@ -83,11 +100,11 @@ The complete acceptance target includes 200 professional domain cases, 360 confi
 
 ## Availability
 
-This repository is an introduction, not an installable release. No public product-source download, package, or installer is offered here. Local use, BYOK, and compatible installed local models are part of the product direction; external model and platform costs depend on the services selected.
+The independent configuration preview is available from the Release linked above. The complete AI role runtime remains in development. Local use, BYOK, and compatible installed local models remain part of the product direction; external model and platform costs depend on the services selected.
 
 ## License and source availability
 
-Koder Open CLI is proprietary software. Its product source code remains private. Public documentation, images, and original branding in this repository are **all rights reserved**; see [LICENSE](LICENSE).
+Koder Open CLI is proprietary software. Its product source code remains private. The executable preview is provided under the bundled [Proprietary Preview License](docs/PREVIEW_LICENSE.txt), which permits installation and internal use. Public documentation, images, and original branding remain **all rights reserved**; see [LICENSE](LICENSE). Bundled Node.js components retain their own licenses.
 
 This repository is not licensed under GPL-3.0. Separately released [Koder CLI](https://github.com/KarmenLoop/koder-cli) components and third-party materials retain their respective licenses. This notice does not relicense them or grant rights to the private Koder kernel.
 

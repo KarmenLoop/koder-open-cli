@@ -6,7 +6,7 @@ This plan retains the full product scope: 20 requirements, 20 domains, 18 channe
 
 ## Current milestone
 
-The local development preview has a configuration compiler and schema, versioned file persistence, conflict checks, reset/rollback, independent CLI entry, a local Role Studio, 20 editable domain seeds, an 18-channel catalog, and a bundled disabled behavior skill. It does not yet have integrated live task execution, connected channels, running behavior analysis, completed professional domain evaluations, installers, or independent product QA. Existing tests establish only their tested local boundaries.
+The local development preview has a configuration compiler and schema, versioned file persistence, conflict checks, reset/rollback, independent CLI entry, a local Role Studio, 20 editable domain seeds, an 18-channel catalog, and a bundled disabled behavior skill. It does not yet have integrated live task execution, connected channels, running behavior analysis, completed professional domain evaluations, other-platform installers, or independent product QA. A native macOS Apple Silicon configuration-preview installer is now available. Existing tests establish only their tested local boundaries.
 
 ## Engineering principles
 
@@ -236,4 +236,4 @@ The complete product requires evidence for R01–R20, D01–D20, C01–C18, all 
 
 ## Publication policy
 
-The public repository contains English product documentation and sanitized preview images only. Keep runtime source, executable skills, configuration seeds, host internals, customer data, secrets, and internal evidence outside its Git history. Do not apply GPL-3.0 to these public materials or relabel any existing GPL component. Product software is proprietary and remains privately held; no installer or binary release is published by this documentation milestone.
+The public Git tree contains English product documentation, sanitized preview images, and the download installer. Keep product runtime source, source maps, host internals, customer data, secrets, and internal evidence outside its Git history. The proprietary 0.1.0-preview.1 macOS arm64 runtime is distributed as a Release asset under its bundled preview license. This configuration-preview milestone does not satisfy complete-product acceptance. Existing GPL components retain their licenses.

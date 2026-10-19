@@ -1,0 +1,22 @@
+Koder Open CLI — Proprietary Preview License
+Copyright (c) 2026 KarmenLoop. All rights reserved.
+
+Permission is granted to install and run this unmodified preview on devices
+you own or administer, for evaluation and internal business use. This is a
+limited, non-exclusive permission to use the binary distribution; product
+source code is not licensed or distributed by this grant.
+
+You may customize your own role settings, content, and data. You retain your
+rights in that material. No permission is granted to redistribute, sell,
+sublicense, modify the product runtime, remove notices, or use KarmenLoop
+trademarks, except under a separate written agreement or applicable law.
+
+This preview is provided AS IS, without warranty, including warranties of
+merchantability, fitness for a particular purpose, or non-infringement. To the
+extent permitted by law, KarmenLoop is not liable for damages arising from
+use of this preview. Mandatory rights under applicable law are unaffected.
+
+Third-party components retain their own licenses. In particular, the bundled
+Node.js runtime and its dependencies are covered by NODE_LICENSE.txt. This
+notice does not restrict rights granted under those licenses. The separately
+licensed Koder CLI and private Koder kernel are not included in this preview.
