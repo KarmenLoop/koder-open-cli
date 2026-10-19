@@ -1,10 +1,8 @@
 # Koder Open CLI
 
-**Define the role. Set the standards. Make AI work your way.**
+Koder Open CLI lets you configure an AI role's responsibilities, working rules, and response style. Start with the defaults, then edit the settings for the way your team works.
 
-Koder Open CLI is a configurable AI role platform from [KarmenLoop](https://karmenloop.com). It is designed to turn general-purpose AI into a work assistant that follows your business standards, scope, methods, workflows, habits, and voice.
-
-Start with ready-to-edit defaults. Shape every business setting. Bring the role to the websites, collaboration tools, and messaging channels where work happens.
+The current macOS preview supports local role configuration. Model connections, live business channels, and behavior analysis are still in development.
 
 **Status:** 0.1.0-preview.1 · installable macOS Apple Silicon configuration preview · live integrations in progress.
 
@@ -31,7 +29,7 @@ Open the local URL printed by Studio. Or extract the downloaded archive and run 
 
 *Actual local development preview with synthetic configuration. Models, live task execution, and external channels are not connected in this view.*
 
-## Your role, your way
+## Role settings
 
 Configure responsibilities, job titles, departments, reporting relationships, service audiences, operating rules, business boundaries, work methods, orchestration, habits, wording, tone, language, and delivery standards.
 
@@ -39,7 +37,7 @@ The complete product is designed for three levels of control: describe a change 
 
 Every business module starts with defaults. Users can override, replace, combine, reset, and version settings. Full customization does not bypass platform permissions, identity checks, or action approval.
 
-## Built around the Koder ecosystem
+## How it fits with Koder
 
 Koder Open CLI is the role and channel configuration layer for the Koder ecosystem. Its architecture reuses existing model, session, tool, task, memory, skill, and scheduling foundations through reviewed host interfaces.
 
@@ -53,7 +51,7 @@ The complete system separates personal preference learning, business activity su
 
 A temporary request stays temporary. Another person's message does not become your preference. Automatic adaptation cannot expand permissions or change recipients. Users can replace the skill and customize its permitted behavior.
 
-## All business domains remain in scope
+## Business settings
 
 Twenty domain families cover customer support, sales, marketing, content and brand, administration, HR and training, finance, procurement, project delivery, engineering and IT, data and decisions, commerce, manufacturing and quality, education, professional services and research, local services, communities, cross-border work, business management, and custom industries.
 
@@ -91,7 +89,7 @@ The preview passed 47 source tests and 13 installer/runtime/distribution accepta
 
 [Behavior and preference controls](media/behavior-preferences.jpg) · [Mobile layout](media/role-studio-mobile.jpg). These views show local configuration only.
 
-## Read the plan
+## Documentation
 
 - [Complete product specification](docs/PRODUCT_SPEC.md): defaults, full customization, behavior analysis, all domains and channels, operating model, and acceptance requirements.
 - [Development plan](docs/DEVELOPMENT_PLAN.md): twenty work packages, dependencies, milestones, verification, and release criteria.
