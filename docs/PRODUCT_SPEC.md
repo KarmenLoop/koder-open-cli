@@ -1,8 +1,8 @@
 # Koder Open CLI — Product Specification
 
-Version 1.1 · October 19, 2026 · English edition
+Version 1.2 · October 19, 2026 · English edition
 
-This specification defines the complete product scope. It is a development target, not a statement that every feature is available. The English edition updates the shipped language to English; users can customize role languages. The software remains proprietary. Public GitHub materials contain product information, not product source code.
+This specification defines the complete product scope. It is a development target, not a statement that every feature is available. The English edition updates the shipped language to English; users can customize role languages. The software remains proprietary. Public GitHub materials contain product information and a download installer. The proprietary macOS arm64 configuration-preview executable is a separate Release asset; product source code remains private.
 
 ## 1. Product definition
 

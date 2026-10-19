@@ -2,7 +2,8 @@ Koder Open CLI — Proprietary Product and Public Information
 Copyright (c) 2026 KarmenLoop. All rights reserved.
 
 This repository contains public product information, original documentation,
-and preview images. It does not contain Koder Open CLI product source code.
+and preview images. It does not contain Koder Open CLI product source code. The download installer
+is included to obtain the proprietary executable preview.
 
 No license is granted to reproduce, modify, redistribute, sublicense, sell,
 or otherwise exploit these materials or the proprietary product software,
@@ -15,3 +16,7 @@ their own licenses. This notice does not replace, restrict, or relicense them.
 The private Koder kernel is not distributed in this repository.
 
 This repository is not offered under GPL-3.0 or another open-source license.
+
+Executable preview distributions are governed by the separate Proprietary
+Preview License bundled with each package and shown in docs/PREVIEW_LICENSE.txt.
+Third-party runtime notices and licenses are included in each package.
