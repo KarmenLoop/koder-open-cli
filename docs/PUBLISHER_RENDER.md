@@ -77,7 +77,7 @@ In Render:
 Use **only one** signing input. A self-hosted service may instead use `KODER_SIGNING_KEY_FILE` pointing to a protected regular file. Managed secret-file permissions vary; the base64 secret avoids putting a private file in the repository or image. Do not set both forms.
 
 6. Review secrets in the platform UI yourself and deploy the reviewed source revision. Startup performs a read-only repository check and refuses to listen if settings, key or repository privacy fail. A successful startup logs a generic listening state without secrets.
-7. Open the actual provider-assigned HTTPS origin plus `/healthz`. It should return `ready: true`, `version: 0.2.0-dev.5`, the public Client ID, current terms digest and SHA-256 signing fingerprint. Startup readiness is not proof of a permanent GitHub connection. Accept/renew independently check it again.
+7. Open the actual provider-assigned HTTPS origin plus `/healthz`. It should return `ready: true`, `version: 0.2.0-dev.6`, the public Client ID, current terms digest and SHA-256 signing fingerprint. Startup readiness is not proof of a permanent GitHub connection. Accept/renew independently check it again.
 
 [Render web services](https://render.com/docs/web-services), [environment variables](https://render.com/docs/configure-environment-variables), [Blueprint specification](https://render.com/docs/blueprint-spec).
 

@@ -1,32 +1,32 @@
-# Install Koder Open CLI dev.5
+# Install Koder Open CLI dev.6
 
 This development preview supports **macOS Apple Silicon** and **Windows x64**. Each native archive includes the runtime. No Node installation or administrator account is required for ordinary use. Intel Mac, Windows ARM64 and Linux have no accepted package in this release.
 
 ## Download and verify
 
-Open the [versioned release](https://github.com/KarmenLoop/koder-open-cli/releases/tag/v0.2.0-dev.5). Download your platform archive and matching `.sha256` file. If that release has no attachments, wait for publication. Do not substitute an older package.
+Open the [versioned release](https://github.com/KarmenLoop/koder-open-cli/releases/tag/v0.2.0-dev.6). Download your platform archive and matching `.sha256` file. If that release has no attachments, wait for publication. Do not substitute an older package.
 
 On Mac, from the directory containing both files:
 
 ```sh
-shasum -a 256 -c koder-open-0.2.0-dev.5-darwin-arm64.sha256
-tar -xzf koder-open-0.2.0-dev.5-darwin-arm64.tar.gz
-cd koder-open-0.2.0-dev.5-darwin-arm64
+shasum -a 256 -c koder-open-0.2.0-dev.6-darwin-arm64.sha256
+tar -xzf koder-open-0.2.0-dev.6-darwin-arm64.tar.gz
+cd koder-open-0.2.0-dev.6-darwin-arm64
 sh install.sh
 ```
 
 On Windows, compare the returned hash to the downloaded checksum file, then extract the ZIP and run its installer from a normal PowerShell window:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath "$HOME\Downloads\koder-open-0.2.0-dev.5-win32-x64.zip"
-Get-Content -LiteralPath "$HOME\Downloads\koder-open-0.2.0-dev.5-win32-x64.sha256"
-Set-Location -LiteralPath "C:\KoderOpen\koder-open-0.2.0-dev.5-win32-x64"
+Get-FileHash -Algorithm SHA256 -LiteralPath "$HOME\Downloads\koder-open-0.2.0-dev.6-win32-x64.zip"
+Get-Content -LiteralPath "$HOME\Downloads\koder-open-0.2.0-dev.6-win32-x64.sha256"
+Set-Location -LiteralPath "C:\KoderOpen\koder-open-0.2.0-dev.6-win32-x64"
 .\install.ps1
 ```
 
 Use your actual extraction path. Review the four displayed legal documents. Enter `accept` only if you agree. Installation stops without consent. If local execution policy blocks the script, preserve the message and use a distribution approved by your administrator; do not disable machine-wide security controls. Mac binaries are ad-hoc signed and not Apple-notarized. Windows binaries are not publisher-signed.
 
-The public `install/koder-open.sh` and `install/koder-open.ps1` downloaders use the same explicit dev.5 archive and verify its checksum and file list. Save the script, inspect it, then run it in an interactive terminal. Piping a downloader into a shell does not provide an interactive terms prompt. Unattended installation requires the exact legal digest supplied deliberately after review; it does not grant a signed model license.
+The public `install/koder-open.sh` and `install/koder-open.ps1` downloaders use the same explicit dev.6 archive and verify its checksum and file list. Save the script, inspect it, then run it in an interactive terminal. Piping a downloader into a shell does not provide an interactive terms prompt. Unattended installation requires the exact legal digest supplied deliberately after review; it does not grant a signed model license.
 
 ## First use
 

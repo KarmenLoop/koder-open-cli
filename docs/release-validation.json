@@ -1,33 +1,38 @@
 {
-  "version": "0.2.0-dev.5",
-  "state": "superseded development candidate; Windows activation blocked",
-  "buildSourceCommit": "a5ab305ebd8cde62c8250b01c3e8735d6a8c4e7a",
-  "issuerSourceCommit": "9739a88e7256ccbc21daa351f5a806947e07c36a",
-  "sourceTests": 118,
+  "version": "0.2.0-dev.6",
+  "state": "development-prerelease; independent production acceptance pending",
+  "buildSourceCommit": "81dba329d8197480115018812196ad17f784984a",
+  "issuerSourceCommit": "81dba329d8197480115018812196ad17f784984a",
+  "sourceTests": 119,
+  "termsDigest": "0f337cc023bd0c6ecfe8a416ae5791367001eca84086be7c466a98256781e081",
+  "macArm": {
+    "nativeChecks": 18,
+    "sha256": "c60f02c5e699cc423a2b37b438506547bf16c45d915aea33f2f29fa1ae360be6",
+    "publicDownloadAndActivation": false,
+    "realCliAndTuiDeepSeek": false
+  },
   "windows": {
-    "ci": "https://github.com/KarmenLoop/koder-open-cli-source/actions/runs/39466561992",
+    "ci": "https://github.com/KarmenLoop/koder-open-cli-source/actions/runs/39469148175",
     "conclusion": "success",
-    "sourceTests": 118,
+    "sourceTests": 119,
     "installChecks": 8,
     "workflowChecks": 12,
     "installedConptyTui": true,
-    "sha256": "8bc5de96dab1c4582b0701ff22d77eeb9a39a94088a964fd4b123c37f96f8238",
+    "sha256": "e49e177551a593c744c01ed96d313be3c7a548fac9bfb7200766fd5425ca42e9",
     "publicDownloadAndActivation": false,
     "realRenewal": false,
     "realModelRequests": 0,
-    "modelStatus": "not-run; owner declined hosted credential upload",
-    "publicActivationFailure": "ISSUER_IDENTITY_MISMATCH; embedded CRLF legal resources differed from LF issuer"
+    "modelStatus": "not-run; owner declined hosted credential upload"
   },
-  "macArm": {
-    "nativeChecks": 18,
-    "exitCode": 0,
-    "sha256": "fd988a1f451440c0d8f5bb1d3cef1229f8404656611d84d09661e85a95c34f7b",
-    "realActivation": true,
-    "realRenewal": true,
-    "privateReceiptReadback": true,
-    "realCliAndTuiDeepSeek": true,
-    "publicDownloadRetainedAuthorization": false,
-    "modelTestArchiveSha256": "3401e4daac33bc1b1ed1d90bba53b6efcc53027e209edc79badc56727a397d43"
+  "authorization": {
+    "serviceUrl": "https://koder-open-issuer.onrender.com",
+    "oauthAppRegistered": true,
+    "deviceFlowEnabled": true,
+    "signingFingerprint": "4b85e75b6b01d22693e826910c584b7b8a6a0bc7a8f35e1e43d141b113f9bdde",
+    "termsCanonicalAcrossPlatforms": true,
+    "signedMacAcceptance": false,
+    "signedWindowsAcceptance": false,
+    "realAccountRevocationTested": false
   },
   "provider": {
     "name": "DeepSeek",
@@ -35,33 +40,25 @@
     "thinking": "disabled",
     "maxOutput": 256,
     "syntheticOnly": true,
-    "completeCliAndTui": true,
-    "earlierIncompleteRequestWithheld": true,
-    "automaticRetry": false
-  },
-  "authorization": {
-    "oauthAppRegistered": true,
-    "deviceFlowEnabled": true,
-    "httpsIssuerDeployed": true,
-    "serviceUrl": "https://koder-open-issuer.onrender.com",
-    "signingFingerprint": "4b85e75b6b01d22693e826910c584b7b8a6a0bc7a8f35e1e43d141b113f9bdde",
-    "signedMacAcceptance": true,
-    "receiptReadback": true,
-    "renewalDeadlinePreserved": true,
-    "realAccountRevocationTested": false
+    "macRealCliAndTui": false,
+    "windowsRealCalls": false
   },
   "handbook": {
     "chapters": 32,
     "examples": 23,
-    "url": "https://karmenloop.github.io/koder-open-cli/handbook/",
-    "offlineSha256": "350449293a651e280efa61c179b78fb35015fc7cf42746be18ef4b8296d1e791"
+    "url": "https://karmenloop.github.io/koder-open-cli/handbook/"
   },
+  "preservedFailures": [
+    "dev.5 Windows public-download activation blocked by CRLF legal text; no bypass",
+    "dev.5 first Mac lease clock rejection",
+    "dev.5 initial short-budget provider response withheld"
+  ],
   "remaining": [
-    "Windows real model calls not run by owner choice",
+    "Windows real provider calls not run by owner choice",
     "physical Windows workstation and independent QA",
     "Intel Mac, Windows ARM64 and Linux",
     "publisher OS signing and Apple notarization",
-    "production retention, deletion, incident procedures and legal review",
-    "external tool execution, connected channels and unattended learning"
+    "production retention/deletion, incident procedures and legal review",
+    "external tools, connected channels and unattended learning"
   ]
 }
