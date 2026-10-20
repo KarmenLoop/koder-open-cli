@@ -8,8 +8,8 @@
   "macArm": {
     "nativeChecks": 18,
     "sha256": "9e47b9684c5116763f8a1e238792dc39db3e54c72aafe9e34d60530f4fcf1a40",
-    "publicDownloadAndActivation": false,
-    "realCliAndTuiDeepSeek": false
+    "publicDownloadAndActivation": true,
+    "realCliAndTuiDeepSeek": true
   },
   "windows": {
     "ci": "https://github.com/KarmenLoop/koder-open-cli-source/actions/runs/39471203330",
@@ -19,20 +19,21 @@
     "workflowChecks": 12,
     "installedConptyTui": true,
     "sha256": "54a16096f8113960471db98e848fece9e59b4cc1e08535293c0488416d3933d1",
-    "publicDownloadAndActivation": false,
-    "realRenewal": false,
+    "publicDownloadAndActivation": true,
+    "realRenewal": true,
+    "activationCi": "https://github.com/KarmenLoop/koder-open-cli-source/actions/runs/39474327572",
     "realModelRequests": 0,
     "modelStatus": "not-run; owner declined hosted credential upload"
   },
   "authorization": {
     "serviceUrl": "https://koder-open-issuer.onrender.com",
-    "currentVersionReady": false,
+    "currentVersionReady": true,
     "oauthAppRegistered": true,
     "deviceFlowEnabled": true,
     "signingFingerprint": "4b85e75b6b01d22693e826910c584b7b8a6a0bc7a8f35e1e43d141b113f9bdde",
     "termsCanonicalAcrossPlatforms": true,
-    "signedMacAcceptance": false,
-    "signedWindowsAcceptance": false,
+    "signedMacAcceptance": true,
+    "signedWindowsAcceptance": true,
     "realAccountRevocationTested": false
   },
   "provider": {
@@ -41,7 +42,7 @@
     "thinking": "disabled",
     "maxOutput": 256,
     "syntheticOnly": true,
-    "macRealCliAndTui": false,
+    "macRealCliAndTui": true,
     "windowsRealCalls": false
   },
   "handbook": {
@@ -52,7 +53,8 @@
   "preservedFailures": [
     "dev.5 Windows public-download activation blocked by CRLF legal text; no bypass",
     "dev.5 first Mac lease clock rejection",
-    "dev.5 initial short-budget provider response withheld"
+    "dev.5 initial short-budget provider response withheld",
+    "dev.7 first Mac sign-in stopped on a network error; explicit fresh sign-in passed"
   ],
   "remaining": [
     "Windows real provider calls not run by owner choice",

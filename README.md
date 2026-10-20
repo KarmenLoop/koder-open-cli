@@ -2,7 +2,7 @@
 
 Koder Open CLI is a customizable AI text tool from the KARMENLOOP Team in Shanghai, China. Set a role’s purpose, allowed topics, working method and voice, feed it approved text, and check answers against your output rules. The CLI, interactive TUI and local browser settings share the same saved role and skill library.
 
-[Company website](https://karmenloop.com) · [Contact](mailto:info@karmenloop.com) · [Complete Chinese handbook](https://karmenloop.github.io/koder-open-cli/handbook/) · [Download dev.5](https://github.com/KarmenLoop/koder-open-cli/releases/tag/v0.2.0-dev.7)
+[Company website](https://karmenloop.com) · [Contact](mailto:info@karmenloop.com) · [Complete Chinese handbook](https://karmenloop.github.io/koder-open-cli/handbook/) · [Download dev.7](https://github.com/KarmenLoop/koder-open-cli/releases/tag/v0.2.0-dev.7)
 
 ## Install the development preview
 
@@ -28,7 +28,7 @@ The product GitHub OAuth App and free HTTPS authorization service are live. Read
 
 Choose a full text API endpoint, exact model ID and credential environment-variable name. The key stays outside role and model configuration files. DeepSeek short tasks can explicitly select `--thinking disabled`; other providers retain their default unless they support that option. Requests send the selected task, role and enabled material to the selected provider.
 
-Dev.7 live acceptance: Native Mac and Windows checks passed. The final issuer update and public-download activation checks are pending. Windows real model calls remain unverified by owner choice. See [current validation](docs/VALIDATION.md). These are development checks, not independent production acceptance.
+Dev.7 live acceptance: Public GitHub packages completed real installed activation and signed renewal on Mac and Windows x64. The installed Mac CLI and TUI returned checked synthetic DeepSeek responses. Windows real model calls remain unverified by owner choice. See [current validation](docs/VALIDATION.md). These are development checks, not independent production acceptance.
 
 ## Make it fit your work
 

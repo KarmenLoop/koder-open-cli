@@ -1,4 +1,4 @@
-# Install Koder Open CLI dev.6
+# Install Koder Open CLI dev.7
 
 This development preview supports **macOS Apple Silicon** and **Windows x64**. Each native archive includes the runtime. No Node installation or administrator account is required for ordinary use. Intel Mac, Windows ARM64 and Linux have no accepted package in this release.
 
@@ -26,7 +26,7 @@ Set-Location -LiteralPath "C:\KoderOpen\koder-open-0.2.0-dev.7-win32-x64"
 
 Use your actual extraction path. Review the four displayed legal documents. Enter `accept` only if you agree. Installation stops without consent. If local execution policy blocks the script, preserve the message and use a distribution approved by your administrator; do not disable machine-wide security controls. Mac binaries are ad-hoc signed and not Apple-notarized. Windows binaries are not publisher-signed.
 
-The public `install/koder-open.sh` and `install/koder-open.ps1` downloaders use the same explicit dev.6 archive and verify its checksum and file list. Save the script, inspect it, then run it in an interactive terminal. Piping a downloader into a shell does not provide an interactive terms prompt. Unattended installation requires the exact legal digest supplied deliberately after review; it does not grant a signed model license.
+The public `install/koder-open.sh` and `install/koder-open.ps1` downloaders use the same explicit dev.7 archive and verify its checksum and file list. Save the script, inspect it, then run it in an interactive terminal. Piping a downloader into a shell does not provide an interactive terms prompt. Unattended installation requires the exact legal digest supplied deliberately after review; it does not grant a signed model license.
 
 ## First use
 
