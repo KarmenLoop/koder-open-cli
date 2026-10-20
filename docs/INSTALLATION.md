@@ -4,23 +4,23 @@ This development preview supports **macOS Apple Silicon** and **Windows x64**. E
 
 ## Download and verify
 
-Open the [versioned release](https://github.com/KarmenLoop/koder-open-cli/releases/tag/v0.2.0-dev.6). Download your platform archive and matching `.sha256` file. If that release has no attachments, wait for publication. Do not substitute an older package.
+Open the [versioned release](https://github.com/KarmenLoop/koder-open-cli/releases/tag/v0.2.0-dev.7). Download your platform archive and matching `.sha256` file. If that release has no attachments, wait for publication. Do not substitute an older package.
 
 On Mac, from the directory containing both files:
 
 ```sh
-shasum -a 256 -c koder-open-0.2.0-dev.6-darwin-arm64.sha256
-tar -xzf koder-open-0.2.0-dev.6-darwin-arm64.tar.gz
-cd koder-open-0.2.0-dev.6-darwin-arm64
+shasum -a 256 -c koder-open-0.2.0-dev.7-darwin-arm64.sha256
+tar -xzf koder-open-0.2.0-dev.7-darwin-arm64.tar.gz
+cd koder-open-0.2.0-dev.7-darwin-arm64
 sh install.sh
 ```
 
 On Windows, compare the returned hash to the downloaded checksum file, then extract the ZIP and run its installer from a normal PowerShell window:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath "$HOME\Downloads\koder-open-0.2.0-dev.6-win32-x64.zip"
-Get-Content -LiteralPath "$HOME\Downloads\koder-open-0.2.0-dev.6-win32-x64.sha256"
-Set-Location -LiteralPath "C:\KoderOpen\koder-open-0.2.0-dev.6-win32-x64"
+Get-FileHash -Algorithm SHA256 -LiteralPath "$HOME\Downloads\koder-open-0.2.0-dev.7-win32-x64.zip"
+Get-Content -LiteralPath "$HOME\Downloads\koder-open-0.2.0-dev.7-win32-x64.sha256"
+Set-Location -LiteralPath "C:\KoderOpen\koder-open-0.2.0-dev.7-win32-x64"
 .\install.ps1
 ```
 

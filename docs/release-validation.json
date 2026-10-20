@@ -1,24 +1,24 @@
 {
-  "version": "0.2.0-dev.6",
+  "version": "0.2.0-dev.7",
   "state": "development-prerelease; independent production acceptance pending",
-  "buildSourceCommit": "81dba329d8197480115018812196ad17f784984a",
-  "issuerSourceCommit": "81dba329d8197480115018812196ad17f784984a",
+  "buildSourceCommit": "dc62a41bc3217f2963ccbb4cdaec4f4903e3d707",
+  "issuerSourceCommit": "dc62a41bc3217f2963ccbb4cdaec4f4903e3d707",
   "sourceTests": 119,
   "termsDigest": "0f337cc023bd0c6ecfe8a416ae5791367001eca84086be7c466a98256781e081",
   "macArm": {
     "nativeChecks": 18,
-    "sha256": "c60f02c5e699cc423a2b37b438506547bf16c45d915aea33f2f29fa1ae360be6",
+    "sha256": "9e47b9684c5116763f8a1e238792dc39db3e54c72aafe9e34d60530f4fcf1a40",
     "publicDownloadAndActivation": false,
     "realCliAndTuiDeepSeek": false
   },
   "windows": {
-    "ci": "https://github.com/KarmenLoop/koder-open-cli-source/actions/runs/39469148175",
+    "ci": "https://github.com/KarmenLoop/koder-open-cli-source/actions/runs/39471203330",
     "conclusion": "success",
     "sourceTests": 119,
     "installChecks": 8,
     "workflowChecks": 12,
     "installedConptyTui": true,
-    "sha256": "e49e177551a593c744c01ed96d313be3c7a548fac9bfb7200766fd5425ca42e9",
+    "sha256": "54a16096f8113960471db98e848fece9e59b4cc1e08535293c0488416d3933d1",
     "publicDownloadAndActivation": false,
     "realRenewal": false,
     "realModelRequests": 0,
@@ -26,6 +26,7 @@
   },
   "authorization": {
     "serviceUrl": "https://koder-open-issuer.onrender.com",
+    "currentVersionReady": false,
     "oauthAppRegistered": true,
     "deviceFlowEnabled": true,
     "signingFingerprint": "4b85e75b6b01d22693e826910c584b7b8a6a0bc7a8f35e1e43d141b113f9bdde",

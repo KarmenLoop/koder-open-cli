@@ -6,7 +6,7 @@ function Get-PayloadDigest([string]$file) {
   finally { $stream.Dispose(); $algorithm.Dispose() }
 }
 if ($env:OS -ne 'Windows_NT' -or ![Environment]::Is64BitOperatingSystem -or $env:PROCESSOR_ARCHITECTURE -ne 'AMD64') { throw 'PLATFORM_UNSUPPORTED: use Windows x64.' }
-$version = '0.2.0-dev.6'
+$version = '0.2.0-dev.7'
 $name = "koder-open-$version-win32-x64"
 if (!$DownloadBase) { $DownloadBase = "https://github.com/KarmenLoop/koder-open-cli/releases/download/v$version" }
 $origin = [Uri]$DownloadBase

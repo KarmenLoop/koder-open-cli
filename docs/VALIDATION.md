@@ -1,22 +1,22 @@
-# Development validation: 0.2.0-dev.6
+# Development validation: 0.2.0-dev.7
 
-Dev.6 corrects a failure discovered by the real Windows dev.5 public-download acceptance. Windows had embedded CRLF legal resources while the issuer hashed LF. The signature and terms gate correctly stayed closed. Dev.6 canonicalizes only CRLF line endings before displaying and hashing legal text, fixes checkout attributes, and adds an LF/CRLF regression which also proves changed wording still changes the digest. Both native manifests contain the same canonical terms digest.
+This revision retains the dev.6 correction for a failure discovered by the real Windows dev.5 public-download acceptance. Windows had embedded CRLF legal resources while the issuer hashed LF. The signature and terms gate correctly stayed closed. It canonicalizes only CRLF line endings before displaying and hashing legal text, fixes checkout attributes, and adds an LF/CRLF regression which also proves changed wording still changes the digest. Both native manifests contain the same canonical terms digest.
 
 | Area | Actual evidence | Limit |
 | --- | --- | --- |
 | Source | 119 passed, 0 failed on Mac Node 22.23.2 and native Windows CI | Self-checks |
 | Mac Apple Silicon | 18 installer/runtime/distribution checks passed | Ad-hoc signing, no Apple notarization |
 | Windows x64 | 8 installer checks, 12 download/local-use checks, installed-command ConPTY Chinese save/reopen and exit | Windows Server 2022 CI, not a physical customer machine |
-| Deployed issuer | Free Render HTTPS, version dev.6, trusted App/key/terms health match | Startup readiness, no uptime guarantee |
-| Mac live use | The dev.5 Mac live path passed. Dev.6 public-download activation and provider acceptance are pending and are not inferred from that older result. | Synthetic material only |
-| Windows live use | Real dev.6 public-download device activation and renewal are pending; local CI is not substituted for that proof. | No real model request by owner choice |
+| Deployed issuer | Final manual deployment pending; existing free service retains the configured App and key | Startup readiness, no uptime guarantee |
+| Mac live use | The dev.5 Mac live path passed. This revision’s public-download activation and provider acceptance are pending and are not inferred from that older result. | Synthetic material only |
+| Windows live use | Real current public-download device activation and renewal are pending; local CI is not substituted for that proof. | No real model request by owner choice |
 | Handbook | 32 chapters, 23 editable examples; bundled and offline help | Exact platform results remain separate |
 
-Build input: `81dba329d8197480115018812196ad17f784984a`. [Windows native run](https://github.com/KarmenLoop/koder-open-cli-source/actions/runs/39469148175) is in the private source repository. Mac SHA-256: `c60f02c5e699cc423a2b37b438506547bf16c45d915aea33f2f29fa1ae360be6`. Windows SHA-256: `e49e177551a593c744c01ed96d313be3c7a548fac9bfb7200766fd5425ca42e9`. Both match their checksum files. Canonical terms digest: `0f337cc023bd0c6ecfe8a416ae5791367001eca84086be7c466a98256781e081`.
+Build input: `dc62a41bc3217f2963ccbb4cdaec4f4903e3d707`. [Windows native run](https://github.com/KarmenLoop/koder-open-cli-source/actions/runs/39471203330) is in the private source repository. Mac SHA-256: `9e47b9684c5116763f8a1e238792dc39db3e54c72aafe9e34d60530f4fcf1a40`. Windows SHA-256: `54a16096f8113960471db98e848fece9e59b4cc1e08535293c0488416d3933d1`. Both match their checksum files. Canonical terms digest: `0f337cc023bd0c6ecfe8a416ae5791367001eca84086be7c466a98256781e081`.
 
 ## Activation and provider boundaries
 
-The product GitHub App is **Koder Open CLI**, public Client ID `Ov23li7TL02qaztlNEIc`, with Device Flow enabled. The same free Singapore service and Ed25519 key are retained at https://koder-open-issuer.onrender.com. The deployed source is `81dba329d8197480115018812196ad17f784984a`. No Client Secret is placed in a client. No model credential is uploaded to GitHub Actions. The receipt-only service credential expires November 20, 2026 and needs publisher renewal.
+The product GitHub App is **Koder Open CLI**, public Client ID `Ov23li7TL02qaztlNEIc`, with Device Flow enabled. The same free Singapore service and Ed25519 key are retained at https://koder-open-issuer.onrender.com. The intended deployment source is `dc62a41bc3217f2963ccbb4cdaec4f4903e3d707`; readiness for that version is recorded above. No Client Secret is placed in a client. No model credential is uploaded to GitHub Actions. The receipt-only service credential expires November 20, 2026 and needs publisher renewal.
 
 The server writes and reads back the exact company terms archive and minimal private receipt before signing. A signed lease is bounded to 24 hours and renewal preserves its original fixed 30-day deadline. A changed binary version requires fresh device sign-in. Dev.5 is superseded; its signature and policy gates are not weakened for the old broken Windows asset.
 
