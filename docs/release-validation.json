@@ -1,0 +1,58 @@
+{
+  "version": "0.2.0-dev.4",
+  "state": "validated-development-candidate; activation pending",
+  "buildSourceCommit": "b07321ab0973c5876dc793c9764bdf369ea95895",
+  "windows": {
+    "ci": "https://github.com/KarmenLoop/koder-open-cli-source/actions/runs/39453314235",
+    "conclusion": "success",
+    "sourceTests": 104,
+    "installChecks": 8,
+    "workflowChecks": 12,
+    "downloadOrigin": "owned loopback fixture",
+    "installedConptyTui": true,
+    "sha256": "7352e4c799bafc14c6ff731c8e720530127c525da48463d8312661294e7687ec"
+  },
+  "macArm": {
+    "nativeChecks": 18,
+    "exitCode": 0,
+    "sha256": "fbf8a1de739c18790aa641c5c1ed887d02db0ed6fae09a64a2228e698b4330b8",
+    "manualTuiReopenedChineseRole": true,
+    "manualTuiExitCode": 0,
+    "ownedBackendStopped": true
+  },
+  "provider": {
+    "name": "DeepSeek",
+    "model": "deepseek-flash",
+    "transport": "actual callModel adapter",
+    "syntheticOnly": true,
+    "finalChecks": {
+      "ok": true,
+      "violations": []
+    },
+    "negativeRejected": true,
+    "completionRequestsAcrossProbeRuns": 3,
+    "maxOutputPerRequest": 128,
+    "customerActivatedFlowTested": false
+  },
+  "authorization": {
+    "privateReceiptRepositoryCreated": true,
+    "oauthAppRegistered": false,
+    "httpsIssuerDeployed": false,
+    "deploymentSigningConfigured": false,
+    "realCustomerAcceptanceTested": false
+  },
+  "handbook": {
+    "chapters": 31,
+    "examples": 23,
+    "url": "https://karmenloop.github.io/koder-open-cli/handbook/",
+    "sha256": "f7b57458a8bdd8f25c3775402f99c4ff14be7a85fea5d5119c69366082e9ed12"
+  },
+  "remaining": [
+    "Product OAuth App registration and device flow enabled",
+    "Company HTTPS issuer, signing key and repository-scoped service credential",
+    "Real customer sign-in, receipt delivery, renewal and activated CLI/TUI model call",
+    "Publisher signing/notarization, physical user-device acceptance, Intel Mac and Windows ARM64",
+    "Independent full product QA; external tool and channel host integration"
+  ],
+  "distribution": "GitHub draft only; existing public preview unchanged"
+}

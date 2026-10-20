@@ -37,6 +37,7 @@ Instructions guide a model; deterministic checks enforce only their configured c
 ## Documentation
 
 - [Complete handbook and editable examples](docs/handbook/index.html)
+- [Download the complete offline handbook](https://karmenloop.github.io/koder-open-cli/handbook/koder-cli-handbook-0.2.0-dev.4-zh-CN.zip)
 - [TUI controls](docs/TUI.md)
 - [Learning boundaries and review cycle](docs/LEARNING.md)
 - [Model compatibility](docs/MODEL_COMPATIBILITY.md)
