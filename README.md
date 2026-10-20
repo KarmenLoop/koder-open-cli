@@ -1,5 +1,7 @@
 # Koder Open CLI
 
+> dev.5 Windows activation is on hold: the real public-download test found a CRLF terms-digest mismatch. The separately versioned dev.6 correction is being verified. Please wait for that release before a new Windows installation or activation. Mac dev.5 results remain historical evidence.
+
 Koder Open CLI is a customizable AI text tool from the KARMENLOOP Team in Shanghai, China. Set a role’s purpose, allowed topics, working method and voice, feed it approved text, and check answers against your output rules. The CLI, interactive TUI and local browser settings share the same saved role and skill library.
 
 [Company website](https://karmenloop.com) · [Contact](mailto:info@karmenloop.com) · [Complete Chinese handbook](https://karmenloop.github.io/koder-open-cli/handbook/) · [Download dev.5](https://github.com/KarmenLoop/koder-open-cli/releases/tag/v0.2.0-dev.5)

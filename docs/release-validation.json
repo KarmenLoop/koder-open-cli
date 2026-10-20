@@ -1,6 +1,6 @@
 {
   "version": "0.2.0-dev.5",
-  "state": "development-prerelease; independent production acceptance pending",
+  "state": "superseded development candidate; Windows activation blocked",
   "buildSourceCommit": "a5ab305ebd8cde62c8250b01c3e8735d6a8c4e7a",
   "issuerSourceCommit": "9739a88e7256ccbc21daa351f5a806947e07c36a",
   "sourceTests": 118,
@@ -15,7 +15,8 @@
     "publicDownloadAndActivation": false,
     "realRenewal": false,
     "realModelRequests": 0,
-    "modelStatus": "not-run; owner declined hosted credential upload"
+    "modelStatus": "not-run; owner declined hosted credential upload",
+    "publicActivationFailure": "ISSUER_IDENTITY_MISMATCH; embedded CRLF legal resources differed from LF issuer"
   },
   "macArm": {
     "nativeChecks": 18,

@@ -1,5 +1,7 @@
 # Development validation: 0.2.0-dev.5
 
+**Later public-download finding:** Windows dev.5 installed successfully but real activation stopped with `ISSUER_IDENTITY_MISMATCH`. Its embedded legal resources used CRLF while the issuer used LF. The signature gate remained closed. Dev.6 corrects canonical text and checkout settings; it is being verified separately.
+
 On October 21, 2026, the configured Mac and Windows x64 development packages passed their native local checks. This is development evidence, not independent production acceptance.
 
 | Area | Actual evidence | Limit |
