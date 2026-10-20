@@ -1,109 +1,52 @@
 # Koder Open CLI
 
-Koder Open CLI lets you configure an AI role's responsibilities, working rules, and response style. Start with the defaults, then edit the settings for the way your team works.
+Koder Open CLI is a customizable AI work tool from the KARMENLOOP Team in Shanghai, China. Define a role's purpose, scope, working method and voice, feed it approved text material, and check its answers against your output rules. Use the CLI, interactive TUI, or local browser settings interface with the same saved role and skill library.
 
-The current macOS preview supports local role configuration. Model connections, live business channels, and behavior analysis are still in development.
+[Company website](https://karmenloop.com) · [Contact](mailto:info@karmenloop.com) · [Complete Chinese handbook](https://karmenloop.github.io/koder-open-cli/handbook/) · [Published releases](https://github.com/KarmenLoop/koder-open-cli/releases)
 
-**Status:** 0.1.0-preview.1 · installable macOS Apple Silicon configuration preview · live integrations in progress.
+## Current availability
 
-**Repository scope:** English product documentation, sanitized preview images, and the download installer. Proprietary executable packages are distributed as Release assets. Product source code, private host components, and user data are not published in this Git tree.
+The public installation command below still downloads **0.1.0-preview.1 for macOS Apple Silicon**, a local-configuration preview. It does not contain the newer learning cycle or TUI.
 
-## Download the independent preview
+**0.2.0-dev.4** adds the TUI, skill intake and output checks, local review practice, scoped study preparation, a bundled 31-chapter handbook, Windows installation tooling, and three text API protocols. Its native packages are being collected in a release draft while publisher activation remains unconfigured. They are not a production release or the public latest download. See [current validation and remaining work](docs/VALIDATION.md).
 
-**[Download Koder Open CLI 0.1.0-preview.1 for macOS Apple Silicon](https://github.com/KarmenLoop/koder-open-cli/releases/download/v0.1.0-preview.1/koder-open-0.1.0-preview.1-darwin-arm64.tar.gz)** · [Release notes and checksums](https://github.com/KarmenLoop/koder-open-cli/releases/tag/v0.1.0-preview.1)
+The DeepSeek adapter has returned a real synthetic response using `deepseek-flash`, with passing required-text checks and a rejected negative sample. This is provider-adapter evidence. Customer model operations still require the company's GitHub OAuth App, HTTPS authorization service and signed license. Those services are not live yet.
 
-This package includes the runtime and requires no separate Node.js installation. It uses the independent `koder-open` command and version series.
+## Published macOS preview
 
-Install from Terminal:
+Supports macOS 11 or later on Apple Silicon. The package includes Node.js and installs for the current user. It is ad-hoc signed and is not Apple-notarized.
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/KarmenLoop/koder-open-cli/main/install/koder-open.sh | sh
 "$HOME/.local/bin/koder-open" studio
 ```
 
-Open the local URL printed by Studio. Or extract the downloaded archive and run `sh install.sh` inside it. See [installation, upgrade, rollback, and uninstall instructions](docs/INSTALLATION.md).
+Follow the [published preview installation guide](docs/INSTALLATION.md). Download only the package matching your platform and verify its SHA-256 digest. The draft Windows candidate does not replace this preview command.
 
-**Platform:** macOS 11+ on Apple Silicon. **Distribution:** proprietary preview, ad-hoc signed, not Apple notarized. Additional platforms are still pending. This preview provides local role configuration and synthetic checks; models, live business channels, and active behavior analysis are not connected.
+## Make it fit your work
 
-![Koder Open Role Studio — English local development preview](media/role-studio.jpg)
+1. Define what your role should deliver, which topics it may cover, what sources it must use, and where it should hand work back to you.
+2. Prepare small, approved UTF-8 Markdown or text documents with your methods, examples and terminology. Import, review, and explicitly enable each skill.
+3. Add required phrases, forbidden phrases, length limits or JSON checks. Try both a good answer and a bad answer before relying on the filter.
+4. Choose the allowed learning topics, active sources, retention period and daily request limit. Record only the work and problems you explicitly submit.
+5. Practice local review questions and grade the result. After publisher activation becomes available, explicitly request pre-study, remediation or rehearsal; review every draft before permitting reuse.
+6. Evaluate representative work from your own field. Revise the role and materials when the evidence calls for it.
 
-*Actual local development preview with synthetic configuration. Models, live task execution, and external channels are not connected in this view.*
-
-## Role settings
-
-Configure responsibilities, job titles, departments, reporting relationships, service audiences, operating rules, business boundaries, work methods, orchestration, habits, wording, tone, language, and delivery standards.
-
-The complete product is designed for three levels of control: describe a change in natural language, use a guided settings interface, or manage structured configuration. All three will use the same validated, versioned settings. The current preview includes forms and full configuration editing; natural-language editing and the complete setup wizard are planned.
-
-Every business module starts with defaults. Users can override, replace, combine, reset, and version settings. Full customization does not bypass platform permissions, identity checks, or action approval.
-
-## How it fits with Koder
-
-Koder Open CLI is the role and channel configuration layer for the Koder ecosystem. Its architecture reuses existing model, session, tool, task, memory, skill, and scheduling foundations through reviewed host interfaces.
-
-The planned runtime supports real work: authorized actions, human approval, handoff, durable waiting, dynamic follow-up, cancellation, recovery, and verified results. A preview or a model response is never treated as proof that a message was sent or a business action completed.
-
-## Behavior analysis that users control
-
-A user-behavior-personalization skill is part of the product design and is bundled in the private local preview. It is disabled by default, and its analysis host is not connected yet.
-
-The complete system separates personal preference learning, business activity summaries, and automatic role tuning. Users choose **Off**, **Suggest**, or **Adapt within approved scope**. Evidence, source references, counterexamples, consent, version checks, correction, forgetting, and rollback are integral to the design.
-
-A temporary request stays temporary. Another person's message does not become your preference. Automatic adaptation cannot expand permissions or change recipients. Users can replace the skill and customize its permitted behavior.
-
-## Business settings
-
-Twenty domain families cover customer support, sales, marketing, content and brand, administration, HR and training, finance, procurement, project delivery, engineering and IT, data and decisions, commerce, manufacturing and quality, education, professional services and research, local services, communities, cross-border work, business management, and custom industries.
-
-The current preview provides editable configuration seeds for all twenty. Full professional packs, domain reviews, and representative live tasks are still planned. Each completed domain pack requires at least ten professional acceptance cases.
-
-## Channel roadmap
-
-The full target catalog includes:
-
-- Website widgets and standalone service pages; HTTP APIs and webhooks.
-- Feishu, Lark, WeCom, Telegram, DingTalk, Slack, Discord, and WhatsApp Business.
-- WeChat iLink, Official Accounts, Customer Service, and Mini Programs/H5.
-- Microsoft Teams, email, CLI/TUI, and ACP editor sessions.
-
-These are **18 development targets**, not a claim of 18 working integrations. Verify each installation and capability independently: connection, reception, reply, proactive messaging, attachments, interactions, history, membership, and receipt queries. Platform eligibility and commercial-use conditions must be checked for the actual account and interface; WeChat iLink remains explicitly unverified.
-
-The connector roadmap also covers eleven categories: knowledge/documents, CRM, support tickets, commerce/orders, ERP/inventory, OA/approvals, HR/training, projects, calendars, spreadsheets/data warehouses, and custom APIs.
-
-## What works in the local preview
-
-| Available locally | Still in development |
-| --- | --- |
-| English Role Studio, CLI, and macOS Apple Silicon installer | Integrated live role task execution |
-| Role creation and editable defaults | Complete natural-language setup wizard |
-| Twenty domain configuration seeds | Professional industry packs and reviews |
-| Eighteen-channel capability catalog | Connected and verified business channels |
-| Full configuration editing and field sources | Business connectors and website widget |
-| Save/reopen, conflict checks, reset, and rollback | Cross-device shared memory integration |
-| Synthetic role-readiness checks | Running behavior analysis and controlled adaptation |
-| Bundled, disabled behavior skill | Additional platforms, server deployment, and independent product QA |
-
-The preview passed 47 source tests and 13 installer/runtime/distribution acceptance checks. These cover native binary startup, HTTP save/reopen, download checksums, installation, repeated installation, upgrade, rollback, collision protection, tamper rejection, and uninstall with user data retained. Browser save/reopen was also verified against the installed executable. These checks do not establish live channel or production readiness.
-
-## Additional preview views
-
-[Behavior and preference controls](media/behavior-preferences.jpg) · [Mobile layout](media/role-studio-mobile.jpg). These views show local configuration only.
+Instructions guide a model; deterministic checks enforce only their configured conditions. The tool does not guarantee subject-matter correctness. It does not train foundation-model weights, monitor arbitrary applications, run an unattended learning scheduler, execute external tools, or send channel messages in this candidate.
 
 ## Documentation
 
-- [Complete product specification](docs/PRODUCT_SPEC.md): defaults, full customization, behavior analysis, all domains and channels, operating model, and acceptance requirements.
-- [Development plan](docs/DEVELOPMENT_PLAN.md): twenty work packages, dependencies, milestones, verification, and release criteria.
+- [Complete handbook and editable examples](docs/handbook/index.html)
+- [TUI controls](docs/TUI.md)
+- [Learning boundaries and review cycle](docs/LEARNING.md)
+- [Model compatibility](docs/MODEL_COMPATIBILITY.md)
+- [Authorization and private receipts](docs/AUTHORIZATION.md)
+- [Publisher setup](docs/PUBLISHER_SETUP.md)
+- [Development candidate installation](docs/CANDIDATE_INSTALLATION.md)
+- [Terms, privacy, disclaimer and licensing](docs/legal/terms.md)
 
-The complete acceptance target includes 200 professional domain cases, 360 configuration/routing combinations, every named real channel entry, eleven connector categories, macOS/Windows/Linux, distinct-device recovery, and independent QA. Delivery dates will follow verified dependencies and resourcing.
+## License and privacy
 
-## Availability
+Product source is maintained in a private repository. This public repository contains product information, documentation, selected installer scripts, and explicitly published runtime artifacts. Koder Open CLI uses a restrictive personal, noncommercial license. Product-code changes, derivative development and commercial use require separate written authorization. User-authored role settings and skills remain editable. Third-party components retain their own license grants. This is not an OSI-approved open-source license.
 
-The independent configuration preview is available from the Release linked above. The complete AI role runtime remains in development. Local use, BYOK, and compatible installed local models remain part of the product direction; external model and platform costs depend on the services selected.
-
-## License and source availability
-
-Koder Open CLI is proprietary software. Its product source code remains private. The executable preview is provided under the bundled [Proprietary Preview License](docs/PREVIEW_LICENSE.txt), which permits installation and internal use. Public documentation, images, and original branding remain **all rights reserved**; see [LICENSE](LICENSE). Bundled Node.js components retain their own licenses.
-
-This repository is not licensed under GPL-3.0. Separately released [Koder CLI](https://github.com/KarmenLoop/koder-cli) components and third-party materials retain their respective licenses. This notice does not relicense them or grant rights to the private Koder kernel.
-
-Learn more about KarmenLoop at [karmenloop.com](https://karmenloop.com).
+The planned authorization service records minimal disclosed acceptance receipts in a dedicated private GitHub repository. It must not collect API keys, skill content or task inputs through that receipt path. See the [privacy notice](docs/legal/privacy.md), [disclaimer](docs/legal/disclaimer.md), and [licensing terms](docs/legal/licensing.md). A GitHub Star is welcome and optional; it is never a license condition.

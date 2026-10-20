@@ -1,0 +1,7 @@
+{
+  "topic": "工作写作",
+  "kind": "task",
+  "taskId": "synthetic-current-task",
+  "content": "演示数据：准备一份给新同事的流程说明。",
+  "nextTask": "先制作一页流程检查清单，再起草说明文。"
+}

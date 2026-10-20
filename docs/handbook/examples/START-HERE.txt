@@ -1,0 +1,1 @@
+这些文件是可修改的教程演示资料，不是生产数据。先在独立 --home 目录使用。role-config.json 的 id 为 assistant；粘贴到 Studio 前确认当前角色也是 assistant。所有 JSON 文件 UTF-8 保存。practice/grade/forget 中的大写占位 ID 必须先用实际记录 ID 替换。使用任何真实资料前先确认你有权提供，按自己的岗位修改 my-standard.md 和角色范围。不要把 API Key 写进这些文件。
