@@ -4,6 +4,10 @@ Koder Open CLI is a customizable AI text tool from the KARMENLOOP Team in Shangh
 
 [Company website](https://karmenloop.com) · [Contact](mailto:info@karmenloop.com) · [Complete Chinese handbook](https://karmenloop.github.io/koder-open-cli/handbook/) · [Download dev.7](https://github.com/KarmenLoop/koder-open-cli/releases/tag/v0.2.0-dev.7)
 
+## Dev.8 candidate review
+
+The dev.8 candidate adds task-aware learning, local study previews, a diagnostic command and prepared local Windows acceptance/signing tools. Its native results and remaining gates are recorded in [candidate validation](docs/candidates/dev8/VALIDATION.md). Read the [updated candidate handbook](https://karmenloop.github.io/koder-open-cli/candidates/dev8/handbook/). Candidate runtime assets remain a draft pending certificate and release-specific acceptance; dev.7 remains the operational download linked above. A Windows physical machine is not currently available, and no model key is uploaded to GitHub.
+
 ## Install the development preview
 
 **0.2.0-dev.7** supports macOS Apple Silicon and Windows x64. Each package includes its runtime and a 32-chapter handbook with 23 editable examples. Download your platform archive and its matching `.sha256` file from the versioned release. Read the displayed terms before accepting installation. Intel Mac, Windows ARM64 and Linux are not accepted platforms for this release.

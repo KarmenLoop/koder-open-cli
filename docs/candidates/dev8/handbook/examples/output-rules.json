@@ -1,0 +1,11 @@
+{
+  "requiredText": [
+    "依据："
+  ],
+  "forbiddenText": [
+    "保证结果",
+    "已经替你发送"
+  ],
+  "maxCharacters": 1200,
+  "format": "text"
+}

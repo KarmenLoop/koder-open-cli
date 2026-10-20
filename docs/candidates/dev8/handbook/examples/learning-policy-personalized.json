@@ -1,0 +1,22 @@
+{
+  "policy": {
+    "enabled": true,
+    "topics": [
+      "工作写作",
+      "个人学习"
+    ],
+    "sourceIds": [
+      "my-standard"
+    ],
+    "kinds": [
+      "question",
+      "correction",
+      "task",
+      "problem"
+    ],
+    "useInResponses": true,
+    "captureTaskInputs": false,
+    "dailyRehearsals": 1,
+    "retentionDays": 30
+  }
+}

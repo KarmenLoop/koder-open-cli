@@ -1,0 +1,58 @@
+{
+  "version": "0.2.0-dev.8",
+  "state": "draft candidate; not published for operational model use",
+  "sourceTests": 128,
+  "mac": {
+    "buildSource": "f0630933f46d925fbd78fe367fdee63dee25bce4",
+    "nativeChecks": 18,
+    "nativeTuiPreview": true,
+    "installedTuiStartupAndExit": true,
+    "sha256": "0cadeebf8ac452349888c99fa8ef5e57850e52c5908026cec401ee9e6e80d651",
+    "publisherSigned": false,
+    "notarized": false,
+    "realModelCalls": 0
+  },
+  "windows": {
+    "buildSource": "f89ad4a4199490746f5b7314fb9f65c8b4fbe70b",
+    "ci": "https://github.com/KarmenLoop/koder-open-cli-source/actions/runs/39480868688",
+    "conclusion": "success",
+    "sourceTests": 128,
+    "installerChecks": 8,
+    "downloadLocalChecks": 14,
+    "nativeConpty": true,
+    "localOnlyGuardVerified": true,
+    "scriptSyntaxVerified": true,
+    "realActivation": false,
+    "realModelCalls": 0,
+    "physicalMachine": false,
+    "publisherSigned": false,
+    "sha256": "16270a0eb66f454e1068624ab129ff9121654264c49fcd73c8691f61ff6a35da"
+  },
+  "operationalIssuer": {
+    "version": "0.2.0-dev.7",
+    "installedClientWakePassed": true,
+    "signingFingerprint": "4b85e75b6b01d22693e826910c584b7b8a6a0bc7a8f35e1e43d141b113f9bdde",
+    "preservedColdConnectionTimeout": true
+  },
+  "handbook": {
+    "chapters": 32,
+    "examples": 23,
+    "candidateUrl": "https://karmenloop.github.io/koder-open-cli/candidates/dev8/handbook/"
+  },
+  "keyUploadedToGitHub": false,
+  "remaining": [
+    "Windows real DeepSeek CLI/TUI on an available Windows machine",
+    "Physical Windows acceptance; no machine currently available",
+    "Company signing account public reference and local/provider setup",
+    "Developer ID and Authenticode signing, notarization and Gatekeeper verification",
+    "Matching dev.8 issuer and real installed device activation before operational publication",
+    "Independent QA and production operations"
+  ],
+  "preservedFailures": [
+    "Stale dev.7 expectation in Windows installed-version test",
+    "CMD launcher codepage parse captured a word instead of the numeric value; fixed with native regressions",
+    "First codepage regression harness embedded a Chinese path in a non-UTF8 batch; corrected through a Unicode environment reference",
+    "Initial Mac handbook generation required an explicit UTF-8 declaration",
+    "One 65-second health connection timeout; installed dev.7 wake later passed"
+  ]
+}
