@@ -33,3 +33,9 @@ Checked during development on October 20, 2026. Documentation and fixtures do no
 ## Live DeepSeek adapter evidence
 
 On 2026-10-20 the authorized account returned `deepseek-flash` and `deepseek-v4-pro` from the official model list. A synthetic `deepseek-flash` completion returned a complete response and passed required-text checks; a negative local sample was rejected. Three bounded completion requests were made during validation because two earlier probe runs failed in postprocessing. The key and account credentials were not saved in source or documentation. This is adapter evidence; signed customer activation remains unavailable until publisher setup. Check the model IDs available to your own account.
+
+## dev.5 installed DeepSeek evidence
+
+An installed Mac client completed real GitHub activation and returned checked synthetic DeepSeek answers through both CLI and TUI. The selected model was `deepseek-flash`, the endpoint was `https://api.deepseek.com/chat/completions`, and explicit `--thinking disabled` used the provider’s documented Chat Completions option. The first 128-token request with provider-default thinking was withheld as incomplete; it was not retried automatically. Thinking controls are opt-in and rejected for other protocols. This is not a claim that every provider supports that parameter.
+
+Windows native local use and ConPTY have separate verification. The owner chose not to upload a model credential to GitHub Actions, so Windows real provider calls remain unverified. See VALIDATION.md for the release-specific results. [DeepSeek thinking mode](https://api-docs.deepseek.com/guides/thinking_mode/).

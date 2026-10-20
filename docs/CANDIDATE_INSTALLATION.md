@@ -1,6 +1,6 @@
 # Candidate installation and platform checks
 
-Version 0.2.0-dev.4 is a private development candidate. The existing published release and public download command are unchanged. Do not point a public latest manifest at this artifact before the outstanding release gates pass.
+Version 0.2.0-dev.5 is a development preview for macOS Apple Silicon and Windows x64. Use its explicit versioned release and matching checksums. Production readiness and independent QA remain separate gates.
 
 ## macOS
 

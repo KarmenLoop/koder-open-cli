@@ -1,4 +1,37 @@
-# Development validation: 0.2.0-dev.4
+# Development validation: 0.2.0-dev.5
+
+On October 21, 2026, the configured Mac and Windows x64 development packages passed their native local checks. This is development evidence, not independent production acceptance.
+
+| Area | Actual evidence | Limit |
+| --- | --- | --- |
+| Source | 118 tests passed, 0 failed on Mac Node 22.23.2 and native Windows CI | Self-checks |
+| Mac Apple Silicon | 18 installer/runtime/distribution checks passed, including real local HTTP download, consent, protected settings, fed skills, learning, predecessor upgrade/rollback and uninstall guards | Ad-hoc signing, no Apple notarization |
+| Installed Mac live use | Product GitHub device flow, real private receipt write/readback, strict signature validation, renewal, CLI and TUI DeepSeek synthetic answers with required source phrase | No professional correctness or external-action claim |
+| Windows x64 | 8 installer checks, 12 download/local-use checks and installed-command native ConPTY TUI save/reopen/exit | Windows Server 2022 CI, not a physical customer workstation |
+| Windows provider | No real model call | Owner declined sending a model key to hosted CI |
+| Handbook | 32 chapters, 23 editable examples, bundled help and a documentation-only offline ZIP | Platform results are recorded here rather than inferred from tutorial text |
+
+Windows native CI: https://github.com/KarmenLoop/koder-open-cli-source/actions/runs/39466561992 (private source repository). Build input: `a5ab305ebd8cde62c8250b01c3e8735d6a8c4e7a`. Mac SHA-256: `fd988a1f451440c0d8f5bb1d3cef1229f8404656611d84d09661e85a95c34f7b`. Windows SHA-256: `8bc5de96dab1c4582b0701ff22d77eeb9a39a94088a964fd4b123c37f96f8238`. Both match their checksum files. Public download and live Windows device activation are the next separate acceptance step. No model credential is uploaded and no Windows provider request is claimed. The final documentation repack preserves identical src modules; public-download checks are recorded separately after publication.
+
+## Live authorization and free hosting
+
+Koder Open CLI is registered under KarmenLoop with Device Flow enabled and public Client ID `Ov23li7TL02qaztlNEIc`. The free Singapore Render issuer is live at https://koder-open-issuer.onrender.com. Automatic deployment is off. Its public health identity matches the real App, current terms and Ed25519 public fingerprint. The deployed clock-fix revision is `9739a88e7256ccbc21daa351f5a806947e07c36a`. The receipt-only Contents credential expires November 20, 2026; the publisher must renew it. No credential or signed customer claim is recorded in this document.
+
+The first real installed activation created its receipt but failed strict lease validation. An advancing-clock regression reproduced issue/expiry/deadline values taken at different milliseconds. Capturing one issuance timestamp fixed the server; strict client limits were retained. The corrected deployment passed real activation and renewal. Reauthorization reused the same installation receipt; renewal preserved its identity and fixed deadline.
+
+The first Mac DeepSeek request used 128 output tokens and provider-default thinking. It returned `MODEL_OUTPUT_INCOMPLETE`; no partial answer was released and no automatic retry occurred. Explicit documented `thinking: disabled` with a 256-token cap then produced checked complete answers through both CLI and TUI using only synthetic material. Thinking is opt-in for compatible Chat Completions endpoints. No model key was written into role settings, source or receipt storage.
+
+## Preserved failures and scope
+
+Earlier source checks caught stale version and chapter-count expectations, a too-broad terms fixture matcher and an HTTP deadline response writing headers twice. Initial native Mac acceptance found a missing predecessor-fixture path and an outdated 31-chapter expectation; those inputs were corrected. A later concurrent build caused one 15-second installer envelope to expire; final acceptance ran serially after the build and passed without increasing that limit. A Windows verification script initially looked outside the installed version directory; it was corrected to exercise the actual installed binary. Original failure logs remain in private task evidence.
+
+Real account revocation is covered by fixtures, not a destructive test against the publisher account. Windows provider use, physical Windows devices, OS publisher signing, Apple notarization, other architectures and independent QA remain unverified. Production retention/deletion, incident handling, legal review and uptime operations remain launch gates. External tools, connected business channels and unattended study are not implemented here. Free hosting may sleep or suspend under quota. See [publisher operation and recovery](PUBLISHER_RENDER.md).
+
+## Historical dev.4 validation snapshot
+
+The following records describe the earlier frozen candidate, not dev.5 or the current publisher infrastructure state.
+
+### Development validation: 0.2.0-dev.4
 
 This file distinguishes working local paths, provider-adapter evidence and unfinished publisher activation. It does not grant production release approval.
 

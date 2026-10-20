@@ -1,22 +1,77 @@
-Koder Open CLI — Proprietary Preview License
-Copyright (c) 2026 KarmenLoop. All rights reserved.
+# Personal-use terms
 
-Permission is granted to install and run this unmodified preview on devices
-you own or administer, for evaluation and internal business use. This is a
-limited, non-exclusive permission to use the binary distribution; product
-source code is not licensed or distributed by this grant.
+Version: 2026-10-20.1 — development candidate; not a change to an earlier granted license.
 
-You may customize your own role settings, content, and data. You retain your
-rights in that material. No permission is granted to redistribute, sell,
-sublicense, modify the product runtime, remove notices, or use KarmenLoop
-trademarks, except under a separate written agreement or applicable law.
+Publisher: KARMENLOOP Team, Shanghai, China. Website: https://karmenloop.com. Contact: info@karmenloop.com. KARMENLOOP Team is the supplied publisher name; no incorporated legal entity, street address or registration number is asserted.
 
-This preview is provided AS IS, without warranty, including warranties of
-merchantability, fitness for a particular purpose, or non-infringement. To the
-extent permitted by law, KarmenLoop is not liable for damages arising from
-use of this preview. Mandatory rights under applicable law are unaffected.
+After you accept the current required documents, authenticate your own GitHub account and receive an authentic authorization receipt, you may install and run the unmodified Koder Open CLI distribution for your own personal, noncommercial use. This permission is nonexclusive and does not transfer ownership. A GitHub account alone is not an issued license. Business, organizational, revenue-generating and customer-facing operation requires a separate written commercial authorization; contact the publisher before that use. Industry templates and channel listings do not grant commercial rights.
 
-Third-party components retain their own licenses. In particular, the bundled
-Node.js runtime and its dependencies are covered by NODE_LICENSE.txt. This
-notice does not restrict rights granted under those licenses. The separately
-licensed Koder CLI and private Koder kernel are not included in this preview.
+You may create, change, import and remove your own role configuration, knowledge, prompts, examples and skills. Those materials remain yours or their respective owners'. These permitted configuration changes are distinct from modification of the product runtime. This license does not permit modification, derivative development, sublicensing, sale or redistribution of the product code or runtime, except where applicable law or a separate agreement permits it. Do not remove ownership notices or imply endorsement. No trademark rights are granted.
+
+Use only data, services, accounts and systems you have authority to use. Model access, quotas, API charges and channel permissions are your responsibility. Installing or accepting terms does not grant access to files, applications, third-party accounts, paid APIs, tools or message recipients. Each such capability retains its own authorization requirements.
+
+Required acceptance covers these terms, the privacy notice, AI disclaimer and licensing notice by exact version and SHA-256 digest. The acceptance screen discloses the mandatory GitHub-linked receipt transmission. Optional advertising links, repository stars, behavioral learning, customer-content uploads and model access are separate choices. Refusal leaves help, legal text, local inspection and export available; operational activation is withheld. Updated terms require fresh acceptance before a new authorization is issued. Previously issued grants are not silently rewritten.
+
+The service verifies your GitHub identity and records the minimal receipt in a publisher-controlled private GitHub repository before issuing a signed, expiring license. A locally edited JSON file is not a valid license. If identity verification, private recording or signature verification fails, authorization remains pending. A lease lasts at most 24 hours and renews with the company service without another GitHub sign-in within its fixed 30-day renewal window. Renewal checks the private acceptance record and account revocation status. At the end of that window, or after required terms or binary-version changes, a fresh GitHub authorization is required. An already valid offline lease can be used until its expiry; an offline client cannot instantly learn server-side revocation. Publisher service deployment and commercial authorization remain separate release requirements.
+
+You can stop using the software, remove its runtime and delete local configuration. Withdrawal of access does not retroactively erase acceptance evidence already required to resolve a contract or legal obligation. Contact info@karmenloop.com for access, correction, deletion and commercial-license requests. The publisher must establish the applicable retention schedule and deletion process before collecting real receipts.
+
+Applicable mandatory consumer, privacy and other statutory rights remain unaffected. These terms do not choose a jurisdiction, incorporate an unknown company or claim universal enforceability. Invalid provisions do not expand the granted permissions. Third-party licenses and rights granted by earlier distributions remain separate.
+
+# Privacy notice for Koder Open CLI
+
+Version: 2026-10-20.1 — this Open CLI candidate has an account and authorization design distinct from the existing account-free Koder desktop product.
+
+KARMENLOOP Team, Shanghai, China publishes this product. Contact info@karmenloop.com and https://karmenloop.com. No street address or incorporated entity is asserted.
+
+## Information kept locally
+
+Your role settings, imported skill text, explicit output rules, suggestions, evidence you enter and configuration versions are stored in the local data directory. Imported text is copied, not trained into a foundation model. Imports do not run scripts, install packages or follow linked files. Skills stay disabled until you explicitly enable them. Removing a skill removes the stored library copy; separate exports, your original source file and backups you made remain under your control. Role and space scopes have separate library records.
+
+Preference suggestions do not automatically change a role. Clicking Apply writes an explicit, versioned configuration edit. You can inspect the evidence, reject or delete a suggestion, change the resulting setting and use configuration rollback. Automatic activity surveillance, sensitive-profile inference and background training are not active in this candidate. Do not provide another person's private records without authority.
+
+Model credentials are read only from the credential environment variable you select when you start a text request. This candidate does not save that key, display it, send it to the publisher, or write it into model configuration. A process environment is not an encrypted credential vault; use a restricted launch environment and do not share it. The software refuses credential forwarding through HTTP redirects.
+
+## Required identity and acceptance processing
+
+Operational authorization requires GitHub sign-in. GitHub receives your sign-in and device-authorization interaction under its own privacy policy. The product requests identity access rather than repository write access from you. Existing permissions previously granted to the OAuth application may differ; inspect GitHub's authorization screen. A short-lived access token is held in process memory for identity verification and sent over HTTPS to the displayed publisher authorization endpoint. It is not stored in the receipt, product configuration, logs or license. Do not send a personal access token in a support message.
+
+The publisher's authorization service revalidates the GitHub account and records only: product/version, numeric GitHub account ID and login, random installation ID, required-document versions and SHA-256 digests, the server acceptance timestamp and a stable receipt ID. GitHub private-repository contents are held by the publisher and GitHub; the product does not create a public issue, public commit or public gist for your acceptance. No chats, skills, documents, API keys, hardware identifiers, IP-derived profile or contact list is included. Hosting and GitHub can still see ordinary network connection metadata; this application does not intentionally include it in the acceptance receipt.
+
+Recording this minimal receipt is a disclosed condition of this product's requested license, separate from optional learning and marketing. If you decline, you can read the documents and inspect local settings, but no operational license is issued. A check mark does not prove receipt delivery; the service must confirm a private repository write and return a verifiable signed authorization. License expiry limits offline access. Near expiry, or on an explicit renewal request, the client sends the signed license to the displayed company service to check its private receipt and account-revocation record. It sends no new skill or task content. Automatic renewal preserves the original 30-day renewal deadline; it does not create an endless grant. Keep local signed-license files private because they authorize renewal within that window. Real account removal and revocation still need the actual deployed service and cannot be promised by local-only tests.
+
+## Model services and optional links
+
+When you explicitly request a model response, the selected endpoint receives your task text, relevant role settings and enabled skill contents. That request may incur the provider's fees. The endpoint, model ID and credential reference are visible in settings. No automatic fallback sends your content or key to another host. Local Ollama or other compatible gateways can be configured explicitly; cloud credentials are never silently reused there. Multimodal, tool, channel and live-account capabilities require their own verification.
+
+Company, support and GitHub Star links open only when selected. There are no third-party advertising pixels, compulsory stars or automatic feedback messages. Opening an external page exposes normal connection information to that service. The publisher does not receive task content through those links.
+
+## Access, retention and rights
+
+You can inspect local settings, skill copies, suggestions and authorization state and remove local copies. Local authorization files contain signed claims and minimal identifiers, not the GitHub access token. GitHub may retain private-repository history and backups after file deletion. Before real collection, the publisher must document a bounded retention period, authorized staff access, deletion/redaction procedure for Git history/backups, security incident handling and any required cross-border disclosures. The development candidate does not claim this operational process is deployed.
+
+For access, correction, deletion, withdrawal, security issues or privacy complaints, email info@karmenloop.com. The publisher must respond under applicable law; mandatory rights and regulatory complaint routes are preserved. An imported skill, model response or accepting this notice cannot grant blanket rights over other people’s information.
+
+# AI and preview disclaimer
+
+Version: 2026-10-20.1
+
+Koder Open CLI configures and checks AI role responses. A skill import supplies instructions and examples; it does not retrain a foundation model or guarantee the truth, completeness or professional suitability of every answer. Deterministic checks cover only the configured literal, length and JSON requirements. They do not establish factual accuracy, source validity, legal compliance or sound professional judgment. Treat legal, medical, financial and other consequential outputs as drafts requiring qualified review.
+
+Models, vendors, account permissions, API schemas, availability and billing can change. A protocol fixture or a successful text response does not prove tools, images, audio, real channel delivery or your account access. Unsupported tool requests, refusals, incomplete outputs and failed output checks stop delivery. The program does not silently replace the model or enlarge permissions.
+
+The current development candidate is not a production service. Real GitHub activation requires a registered OAuth application, publisher service, private receipt repository and signing keys. Native Windows installation, macOS signing/notarization and production releases are separately verified. The original preview's evidence does not validate newly changed binaries.
+
+To the extent permitted by applicable law, preview software is provided as available without a promise of uninterrupted operation or fitness for a particular task. This notice does not exclude liability or remedies that cannot lawfully be excluded, and does not relieve the publisher of mandatory consumer, privacy or security obligations. Back up important work, inspect the selected data and endpoint, and authorize consequential actions separately. Questions: info@karmenloop.com.
+
+# Product and third-party licensing notice
+
+Version: 2026-10-20.1
+
+Koder Open CLI is a proprietary product of KARMENLOOP Team. The public repository provides product information and distribution instructions; it does not grant product source-code rights. “Open” in the product name does not describe an OSI-approved open-source license. Personal noncommercial use of the unmodified distribution requires the accompanying terms and valid authorization. Code modification, derivative development, redistribution and commercial operation require separate permission, subject to mandatory law.
+
+Your own skills, documents and role settings remain yours or their respective owners'. You may customize those inputs without modifying the runtime. Import only material you have permission to use; an imported skill's license does not become this product's license. Exported configuration grants no rights in a third party's material or in KARMENLOOP trademarks.
+
+Third-party components retain their original copyright notices and license terms. Those grants are not restricted or replaced by the personal-use product terms. Node.js and its bundled dependencies carry their own notices, supplied with native distributions. Separately licensed Koder CLI or GPL material is not relicensed by this notice. A component and distribution audit must be completed for each released package, and required source offers or notices must accompany any component whose license demands them.
+
+No GPL-3.0 claim, universal open-source claim or permission to sublicense the product is made. Commercial authorization and rights questions: info@karmenloop.com. Website: https://karmenloop.com.

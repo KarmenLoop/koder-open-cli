@@ -3,8 +3,8 @@
 set -eu
 umask 077
 fail() { printf '%s\n' "$*" >&2; exit 1; }
-[ "$(uname -s)" = Darwin ] && [ "$(uname -m)" = arm64 ] || fail 'PLATFORM_UNSUPPORTED: preview 0.1.0-preview.1 currently supports macOS Apple Silicon only.'
-version=0.1.0-preview.1
+[ "$(uname -s)" = Darwin ] && [ "$(uname -m)" = arm64 ] || fail 'PLATFORM_UNSUPPORTED: this downloader supports macOS Apple Silicon only.'
+version=0.2.0-dev.5
 name="koder-open-$version-darwin-arm64"
 base=${KODER_OPEN_DOWNLOAD_BASE:-"https://github.com/KarmenLoop/koder-open-cli/releases/download/v$version"}
 case "$base" in https://*|http://127.0.0.1:*|http://localhost:*) ;; *) fail 'DOWNLOAD_BASE_INVALID: use HTTPS or a local test endpoint.' ;; esac
