@@ -3,18 +3,18 @@
   "state": "draft candidate; not published for operational model use",
   "sourceTests": 128,
   "mac": {
-    "buildSource": "f0630933f46d925fbd78fe367fdee63dee25bce4",
+    "buildSource": "2f2f9f88b9e8d5c139cfe626b887f74c4d488dda",
     "nativeChecks": 18,
     "nativeTuiPreview": true,
     "installedTuiStartupAndExit": true,
-    "sha256": "0cadeebf8ac452349888c99fa8ef5e57850e52c5908026cec401ee9e6e80d651",
+    "sha256": "a530ebdb91ec2a51513e3b5a525fc93453992ac510169b51356a4d20aa312869",
     "publisherSigned": false,
     "notarized": false,
     "realModelCalls": 0
   },
   "windows": {
-    "buildSource": "f89ad4a4199490746f5b7314fb9f65c8b4fbe70b",
-    "ci": "https://github.com/KarmenLoop/koder-open-cli-source/actions/runs/39480868688",
+    "buildSource": "2f2f9f88b9e8d5c139cfe626b887f74c4d488dda",
+    "ci": "https://github.com/KarmenLoop/koder-open-cli-source/actions/runs/39482764507",
     "conclusion": "success",
     "sourceTests": 128,
     "installerChecks": 8,
@@ -26,7 +26,7 @@
     "realModelCalls": 0,
     "physicalMachine": false,
     "publisherSigned": false,
-    "sha256": "16270a0eb66f454e1068624ab129ff9121654264c49fcd73c8691f61ff6a35da"
+    "sha256": "e985fd5b3b0d7aea830af1dfdffcc08569298102debbb7084c8886b83fec2f51"
   },
   "operationalIssuer": {
     "version": "0.2.0-dev.7",
@@ -53,6 +53,7 @@
     "CMD launcher codepage parse captured a word instead of the numeric value; fixed with native regressions",
     "First codepage regression harness embedded a Chinese path in a non-UTF8 batch; corrected through a Unicode environment reference",
     "Initial Mac handbook generation required an explicit UTF-8 declaration",
-    "One 65-second health connection timeout; installed dev.7 wake later passed"
+    "One 65-second health connection timeout; installed dev.7 wake later passed",
+    "Candidate handbook historical dev.7 live results were clarified before final draft packaging"
   ]
 }
