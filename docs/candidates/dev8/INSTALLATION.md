@@ -4,7 +4,7 @@ This dev.8 candidate remains unpublished pending signing and further acceptance.
 
 ## Download and verify
 
-Open the [versioned release](https://github.com/KarmenLoop/koder-open-cli/releases/tag/v0.2.0-dev.8). Download your platform archive and matching `.sha256` file. If that release has no attachments, wait for publication. Do not substitute an older package.
+The dev.8 candidate has no public download yet. Authorized reviewers should use the matching platform archive and `.sha256` file they received. For ordinary installation, use the [published dev.7 release](https://github.com/KarmenLoop/koder-open-cli/releases/tag/v0.2.0-dev.7). The commands below apply only to a dev.8 review package.
 
 On Mac, from the directory containing both files:
 
@@ -26,7 +26,7 @@ Set-Location -LiteralPath "C:\KoderOpen\koder-open-0.2.0-dev.8-win32-x64"
 
 Use your actual extraction path. Review the four displayed legal documents. Enter `accept` only if you agree. Installation stops without consent. If local execution policy blocks the script, preserve the message and use a distribution approved by your administrator; do not disable machine-wide security controls. Mac binaries are ad-hoc signed and not Apple-notarized. Windows binaries are not publisher-signed.
 
-The public `install/koder-open.sh` and `install/koder-open.ps1` downloaders use the same explicit dev.8 archive and verify its checksum and file list. Save the script, inspect it, then run it in an interactive terminal. Piping a downloader into a shell does not provide an interactive terms prompt. Unattended installation requires the exact legal digest supplied deliberately after review; it does not grant a signed model license.
+The public `install/koder-open.sh` and `install/koder-open.ps1` downloaders currently target dev.7. For candidate review, use scripts supplied with the exact dev.8 package and verify its checksum and file list. Save the script, inspect it, then run it in an interactive terminal. Piping a downloader into a shell does not provide an interactive terms prompt. Unattended installation requires the exact legal digest supplied deliberately after review; it does not grant a signed model license.
 
 ## First use
 
